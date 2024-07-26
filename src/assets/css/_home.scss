@@ -1,0 +1,457 @@
+.popular-items {
+    background-color: #F4F1EA;
+
+
+    .carousel-container {
+        width: 80%;
+        margin: auto;
+        padding: 40px 0;
+
+        p {
+            font-size: 20px;
+            font-family: oswald-bold;
+            color: #00A149;
+            margin: 20px 0px;
+
+        }
+
+        h1 {
+            font-size: 60px;
+            font-family: oswald-bold;
+            color: #000;
+            margin: 20px 0px 50px 0px;
+
+        }
+
+        .carousel-card {
+            width: 280px !important;
+            height: 394px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #fff;
+            border-radius: 14px;
+            padding: 20px 30px 50px;
+            text-align: center;
+            background-image: url('https://modinatheme.com/foodking/wp-content/uploads/2024/03/catagory-card-shape.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 50px;
+            box-sizing: border-box;
+
+            &:hover {
+                background-color: #D12121;
+                transition: ease-out .5s;
+
+                h3 {
+                    color: #fff !important;
+                }
+
+                p {
+                    color: #fff !important;
+
+                }
+            }
+
+            .card-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 240px;
+
+                .carousel-card img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+
+                }
+            }
+
+            .card-content {
+                h3 {
+                    font-family: oswald-bold;
+                    color: #000;
+
+                }
+
+
+                p {
+                    color: #D12121;
+                    font-size: 18px;
+                }
+            }
+
+
+
+        }
+
+
+
+    }
+
+ 
+
+
+
+}
+
+.left {
+    width: 513px;
+    height: 350px;
+    position: relative;
+    padding: 50px;
+    border-radius: 20px;
+    background-image: url('https://modinatheme.com/foodking/wp-content/uploads/2024/02/offer-bg-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    .text {
+        p {
+            font-size: 20px;
+            font-family: oswald-bold;
+            color: #D12121;
+
+
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 55px;
+            font-family: oswald-bold;
+            position: relative;
+        }
+
+        .main-food {
+            position: absolute;
+            left: 40%;
+            right: 50%;
+
+        }
+
+        .fiftyper {
+            position: absolute;
+            bottom: 3px;
+            left: 10px;
+            animation: scale-up-two 6s infinite linear;
+        }
+        .burger{
+            position: absolute;
+            animation: rotate 4s infinite linear;
+            right: 70px;
+            top: 0.1px;
+        }
+
+    }
+
+}
+
+.right {
+    width: 55%;
+    height: 350px;
+    position: relative;
+    padding: 50px;
+    border-radius: 20px;
+    background-image: url('https://modinatheme.com/foodking/wp-content/uploads/2024/02/pizza-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    
+    .pizza{
+        position: absolute;
+        width: 397px;
+        height: 349px;
+        right: 0;
+        top: 0;
+        
+    }
+    .pizza-text2{
+        position: relative;
+        top: -125px;
+        right: 30px;
+        animation: rotate 4s infinite linear;
+
+    }
+    .pizza-text1{
+        animation: scale-up-two 6s infinite linear;
+
+    }
+ 
+
+
+}
+.swiper{
+    h5{
+        font-family: oswald-bold;
+        font-size: 20px;
+        margin-top: 110px;
+        margin-left: 10px;
+    }
+    span{
+        color: #FFC222;
+    }
+}
+
+.left:hover .main-food {
+    animation: scale-up 2s linear;
+}
+.right:hover .pizza{
+    animation: scale-up 2s linear;
+
+}
+
+.logo-img:hover img{
+    filter: brightness(0.5) contrast(1.2);
+    transition: ease .3s;
+}
+
+.dark-section{
+    width: 100%;
+    height: 90vh;
+    background-image: url('https://modinatheme.com/foodking/wp-content/uploads/2024/02/main-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .patato{
+        transform: translate(-650px,265px);
+    }
+    .tomato{
+        transform: translate(650px,295px);
+    }
+    .pizza-text2{
+        margin-top: 380px;
+        margin-right: 60px;
+        animation: rotate 4s infinite linear;
+
+    }
+    .spicy{
+        position: relative;
+        right: 120px;
+    margin-bottom:210px;
+    animation: rotate-two 8s infinite linear;
+    
+    }
+    .text{
+        margin-top: 80px;
+        color: #fff;
+        font-family: oswald-bold;
+        h4{
+           font-size: 28px; 
+           margin-bottom: 20px;
+        }
+        h1{
+            font-size: 60px;
+            margin-bottom: 20px;
+
+
+        }
+        h3{
+            font-size: 36px;
+        }
+        span{
+            color:#FFC222;
+        }
+        .home-btn{
+            background-color: #00A149;
+            font-size: 22px;
+            font-family: oswald-semibold;
+            color: #fff;
+            width: 190px;
+            height: 60px;
+            border-radius: 8px ;
+            border: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-top: 50px;
+            margin-left: 10px;
+    
+    
+            &:hover{
+                background-color:#D12121 ;
+                transition: ease-in .4s;
+            }
+        }
+        
+       
+    }
+}
+.fastfoods{
+    p {
+        font-size: 20px;
+        font-family: oswald-bold;
+        color: #00A149;
+        margin: 20px 0px;
+
+    }
+
+    h1 {
+        font-size: 60px;
+        font-family: oswald-bold;
+        color: #000;
+        margin: 20px 0px 50px 0px;
+
+    }
+
+    .row{
+        p{
+            color: black !important;
+        }
+
+     
+    }
+
+    .card:hover p{
+        cursor: pointer;
+        color: #F4F1EA !important;
+    }
+
+    .home-btn{
+        background-color: #00A149;
+        font-size: 22px;
+        font-family: oswald-semibold;
+        color: #fff;
+        width: 190px;
+        height: 60px;
+        border-radius: 8px ;
+        border: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 30px;
+        margin-left: 10px;
+        
+
+
+        &:hover{
+            background-color:#D12121 ;
+            transition: ease-in .4s;
+        }
+    }
+}
+
+.delivery{
+    width: 100%;
+    height: 106vh;
+    background-image: url('https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/h5_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text{
+        margin-top: 150px;
+        margin-left: 80px;
+        color: #fff;
+        font-family: oswald-bold;
+        h4{
+           font-size: 28px; 
+           margin-bottom: 40px;
+        }
+        h1{
+            font-size: 60px;
+            margin-bottom: 40px;
+
+
+        }
+        
+        span{
+            color:#FFC222;
+        }
+        .home-btn{
+            background-color: #00A149;
+            font-size: 22px;
+            font-family: oswald-semibold;
+            color: #fff;
+            width: 190px;
+            height: 60px;
+            border-radius: 8px ;
+            border: none;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-top: 70px;
+            margin-left: 10px;
+    
+    
+            &:hover{
+                background-color:#D12121 ;
+                transition: ease-in .4s;
+            }
+        }
+        
+       
+    }
+    .deliveryman{
+        animation: scale-up 7s linear  infinite;
+        margin-left: 70px;
+
+    }
+}
+
+@keyframes scale-up {
+    0% {
+        transform: scale(0.9);
+    }
+
+    
+
+    50% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes scale-up-two {
+    0% {
+        transform: scale(0.5);
+    }
+
+    40% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(0.5);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+ 
+}
+@keyframes rotate-two{
+    0%{
+        transform: rotate(0deg);
+    }
+  
+    100%{
+        transform: rotate(360deg);
+    }
+
+ 
+}
+.slick-track{
+    display: flex;
+    align-items: center;
+ 
+}

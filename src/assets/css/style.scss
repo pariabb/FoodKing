@@ -1,0 +1,48 @@
+@import '_header';
+@import '_faq';
+@import '_footer';
+@import '_login';
+@import '_shop';
+@import '_product';
+@import '_slider';
+@import '_home';
+@import '_contact';
+
+
+
+body{
+    overflow-x: hidden;
+    a{
+        text-decoration: none;
+    }
+}
+.notfound{
+    background-color: #F0F0F0;
+}
+
+
+@font-face {
+    font-family: oswald-bold;
+    src: url('../fonts/oswald/static/Oswald-Bold.ttf');
+}
+@font-face {
+    font-family: oswald-extra-light;
+    src: url('../fonts/oswald/static/Oswald-ExtraLight.ttf');
+}
+@font-face {
+    font-family: oswald-light;
+    src: url('../fonts/oswald/static/Oswald-Light.ttf');
+}
+@font-face {
+    font-family: oswald-medium;
+    src: url('../fonts/oswald/static/Oswald-Medium.ttf');
+}
+@font-face {
+    font-family: oswald-regular;
+    src: url('../fonts/oswald/static/Oswald-Regular.ttf');
+}
+@font-face {
+    font-family: oswald-semibold;
+    src: url('../fonts/oswald/static/Oswald-SemiBold.ttf');
+}
+

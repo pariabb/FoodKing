@@ -1,0 +1,125 @@
+.card {
+    width: 324px;
+    height: 510px;
+    padding: 10px 20px;
+    margin: 30px 0px 0px;
+    font-size: 17px;
+    font-family: oswald-medium;
+    border-radius: 12px;
+    background-image: url('https://modinatheme.com/foodking/wp-content/uploads/2024/03/catagory-card-shape.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .card-img-top {
+        position: relative;
+        height: 235px;
+        display: flex;
+        flex-direction: row;
+      
+
+        .favories {
+            position: absolute;
+            z-index: 100;
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 5px !important;
+            background-color: #000 !important;
+            border: none;
+            transition: .5s;
+
+            &:hover {
+                background-color: #fff !important;
+                
+                i {
+                    
+                    color: #FFC222;
+                }
+            }
+            
+            i {
+                transition: .5s;
+                color: #fff;
+                width: 17px;
+                height: 17px;
+            }
+        }
+
+        
+        img {
+            width: 100%;
+            object-fit: contain;
+            position: relative;
+            z-index: 99;
+            text-align: center;
+            
+        }
+        
+    }
+    
+    .add-btn {
+        width: 245px;
+        height: 40px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #fff;
+        border: none;
+    }
+    
+    .raiting {
+        color: #FFC222;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+}
+
+.card:hover {
+    background-color: #FFC222;
+    transition: ease-in-out .5s;
+    
+    
+    .raiting {
+        color: #fff;
+        transition: ease-in-out .5s;
+        
+    }
+    
+    
+    p {
+        color: #fff;
+    }
+    .title{
+        color: #000;
+        cursor: pointer;
+    }
+    
+    .title:hover{
+        color: #fff;
+        transition: .7s;
+    }
+
+
+    .add-btn {
+        width: 245px !important;
+        height: 40px !important;
+        font-size: 17px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        transition: ease-in-out .5s;
+
+
+    }
+
+    .add-btn:hover {
+        background-color: #068a41;
+        transition: ease-in-out .5s;
+
+    }
+
+}

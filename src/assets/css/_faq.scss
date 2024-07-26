@@ -1,0 +1,93 @@
+ .page-img {
+     width: auto;
+     height: 351px;
+     background-image: url("https://modinatheme.com/foodking/wp-content/uploads/2024/02/breadcrumb-1.jpg");
+     background-size: cover;
+     font-family: oswald-medium;
+
+     .page-heading {
+         display: flex;
+         flex-direction: column;
+
+         text-align: center;
+
+         h1 {
+             text-align: center;
+             font-size: 60px;
+             color: white;
+             margin-top: 100px;
+         }
+
+         p {
+             .home-link {
+                 color: hsl(147, 100%, 32%) !important;
+                 text-decoration: none !important;
+                 font-size: 20px;
+                 font-weight: 500;
+             }
+
+             span {
+                 font-size: 20px;
+                 color: white;
+             }
+
+
+         }
+     }
+ }
+
+ .accordion {
+     border: none;
+
+     button {
+         border: none;
+     }
+ }
+
+ .question-part {
+     margin-top: 100px;
+
+     span {
+         color: hsl(147, 100%, 32%) !important;
+         font-size: 18px;
+         font-weight: 700;
+
+     }
+
+     h1 {
+         text-align: center;
+         font-size: 53px;
+         color: #000;
+         font-weight: 700;
+
+     }
+
+     .questions {
+         list-style: none;
+
+         li {
+             font-size: 18px;
+             font-weight: 700;
+             margin-top: 30px;
+             margin-bottom: 30px;
+             cursor: pointer;
+         }
+
+         .toggle-button {
+             font-size: 28px;
+             font-weight: 700;
+             border: none;
+             background-color: white;
+             cursor: pointer;
+         }
+
+         .info {
+             margin-top: 5px;
+             font-size: 15px;
+             font-weight: 600;
+             color: #333;
+             text-align: start;
+         }
+     }
+
+ }
