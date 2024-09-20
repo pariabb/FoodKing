@@ -23,7 +23,6 @@ import SwipeSlider2 from '../components/SwipeSlider2';
 const Home = () => {
   const data = useSelector(p => p)
   const slicedData = data.slice(0, 9)
-
   const settings = {
     dots: true,
     infinite: true,
@@ -93,7 +92,7 @@ const Home = () => {
         </div>
 
         <div className="container d-flex my-5">
-          <div className="left">
+          <div className="left"> 
             <div className="text">
               <img className='burger' src={Burger} alt="" />
               <img className='main-food' src={MainFood} alt="" />
@@ -130,14 +129,14 @@ const Home = () => {
           <img className='position-absolute tomato' src={Tomato} alt="" />
         </div>
       </section>
-
-      <section className='fastfoods'>
+<div className="formode">
+<section className='fastfoods'>
         <p className='text-center mt-5'>Cripsy,Very Bite Taste</p>
         <h1 className='text-center'>Popular Fast Foods</h1>
         <div className="container mt-5 my-4">
           <div className="row d-flex justify-content-center">
             {slicedData.map(item => (
-              <div key={item.id} className="col-12 col-lg-4">
+              <div key={item.id} className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
                 <SingleProduct alldata={item} />
               </div>
             ))}
@@ -146,8 +145,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className='delivery mt-2'>
-        <div className="d-flex  ms-5">
+      <section className='delivery '>
+        <div className="d-flex mt-2 ms-5">
           <div className="text">
             <h4>This is chance</h4>
             <h1><span>30 MINUTES <br /> DELIVERY! </span></h1>
@@ -161,7 +160,10 @@ const Home = () => {
           </div>
         </div>
 
+        
+
       </section>
+      </div>
     </div>
   );
 };

@@ -1,8 +1,10 @@
 .shop {
     background-color: rgb(246, 246, 246);
     .catagories {
-        height: 400px;
-        border-bottom: 1px solid rgb(194, 187, 187);
+       
+        select{
+            font-family: oswald-medium;
+        }
 
         span {
             border-left: 3px solid #00A149;
@@ -37,3 +39,42 @@
         }
     }
 }
+@media (min-width: 768px) {
+    .card {
+      width: 45%;
+      margin: 10px auto;
+
+     
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .card {
+      width: 40%;
+      margin: 10px auto;
+
+     
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1400px) {
+
+    .add-btn {
+        width: 145px  !important;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .add-btn:hover{
+        width: 145px ;
+        height: 40px;
+
+    }
+
+  }

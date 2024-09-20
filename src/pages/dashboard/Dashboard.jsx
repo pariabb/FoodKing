@@ -20,6 +20,7 @@ function Dashboard() {
       </section>
     <div className='container dashboard'>
       <Link to="/dashboard/add" className='btn btn-danger mt-4 mb-4'>Add</Link>
+      <div className="table-responsive">
       <table className='table table-striped table-bordered '>
         <thead>
           <tr>
@@ -48,6 +49,7 @@ function Dashboard() {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
     </>
   );

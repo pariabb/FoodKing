@@ -1,0 +1,81 @@
+   .about-main{
+    font-family: oswald-regular;
+
+  .about-description {
+    background-color: #fff;
+  }
+  .home-btn{
+    background-color: #00A149;
+    font-size: 20px;
+    font-family: oswald-semibold;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px ;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+
+
+    &:hover{
+        background-color:#D12121 ;
+        transition: ease-in .4s;
+    }
+}
+
+
+.burger-text{
+    position: absolute;
+    bottom: 40px;
+    width: 300px;
+    left: 60px;
+}
+
+  
+  .about-description h2 {
+    font-size: 36px;
+  }
+  
+  .why-choose-us {
+    background-color: #feeaea;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 36px;
+  }
+  
+  .why-choose-us .fa-solid {
+    color: 
+    #00A149;
+  }
+  .why-choose-us .fa-solid:hover {
+    color: 
+    #D12121;
+  }
+
+  .meet-our-team {
+    background-color: #fff;
+  }
+  
+  .team-member img {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .team-member h4 {
+    font-size:30px;
+    color: #00A149;
+    font-family: oswald-bold;
+    margin: 10px 0;
+  }
+  
+  .team-member p {
+    font-size: 16px;
+  }
+}

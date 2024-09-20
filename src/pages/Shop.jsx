@@ -8,7 +8,8 @@ const Shop = () => {
   const data = useSelector(p => p);
   const [category, setCategory] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [loading, setLoading] = useState(true);  
+  const [loading, setLoading] = useState(true);
+  const [sortOrder, setSortOrder] = useState('');
 
   useEffect(() => {
     const fetchCategories = async () => {
@@ -21,13 +22,13 @@ const Shop = () => {
       } else {
         const uniqueCategories = [...new Set(categoriesData.map(item => item.category))];
         setCategory(['All Products', ...uniqueCategories]);
-        setFiltered(data);  
+        setFiltered(data);
       }
-      setLoading(false);  
+      setLoading(false);
     };
 
     fetchCategories();
-  }, [data]);  
+  }, [data]);
 
   const filterData = (cat) => {
     if (cat === 'All Products') {
@@ -38,8 +39,29 @@ const Shop = () => {
     }
   };
 
+
+  const sortProducts = (order) => {
+    let sortedData = [...filtered];
+    if (order === 'priceLowToHigh') {
+      sortedData.sort((a, b) => a.price - b.price);
+    } else if (order === 'priceHighToLow') {
+      sortedData.sort((a, b) => b.price - a.price);
+    } else if (order === 'nameAToZ') {
+      sortedData.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (order === 'nameZToA') {
+      sortedData.sort((a, b) => b.title.localeCompare(a.title));
+    }
+    setFiltered(sortedData);
+  };
+
+  const handleSortChange = (e) => {
+    const selectedOrder = e.target.value;
+    setSortOrder(selectedOrder);
+    sortProducts(selectedOrder);
+  };
+
   if (loading) {
-    return <div className='d-flex justify-content-center my-5'><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="" /></div>;  
+    return <div className='d-flex justify-content-center my-5'><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="" /></div>;
   }
 
   return (
@@ -56,13 +78,18 @@ const Shop = () => {
       <section className="shop">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-sm-12 col-md-9 col-lg-10 my-5 py-5">
-              <div className="row g-5 mb-4">
+            <div className="col-12 col-sm-12 col-md-9 col-lg-10 my-3 py-5">
+
+
+              <div className="row g-5 mb-4 justify-content-center">
                 {filtered.length === 0 ? (
-                  <p>No products available</p>  
+                  <p>No products available</p>
                 ) : (
                   filtered.map(item => (
+                            <div className="col-12 col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
+
                     <SingleProduct key={item.id} alldata={item} />
+                    </div>
                   ))
                 )}
               </div>
@@ -70,7 +97,7 @@ const Shop = () => {
 
             <div className="catagories col-12 col-sm-12 col-md-3 col-lg-2 my-5 py-5">
               <div className="d-flex flex-row">
-                <span></span><h5>CATAGORIES</h5>
+                <span></span><h5>CATEGORIES</h5>
               </div>
               <ul className="list-group">
                 {category.map((cat, c) => (
@@ -83,6 +110,15 @@ const Shop = () => {
                   </li>
                 ))}
               </ul>
+              <div className=" w-100 mt-3">
+                <select className="form-select" value={sortOrder} onChange={handleSortChange}>
+                  <option value="">Sort by </option>
+                  <option value="priceLowToHigh">Sort by Price: Low to High</option>
+                  <option value="priceHighToLow">Sort by Price: High to Low</option>
+                  <option value="nameAToZ">Sort by Name: A to Z</option>
+                  <option value="nameZToA">Sort by Name: Z to A</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>

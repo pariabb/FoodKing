@@ -10,6 +10,9 @@ import { addProduct } from './tools/actions/shopAction';
 import supabase from './supabase/connectdb'
 import { WishlistProvider } from 'react-use-wishlist'
 import { CartProvider } from 'react-use-cart'
+import { ModeProvider } from './context/ModeContext'
+import './i18n/i18next'
+
 
 
 const store = shopStore();
@@ -37,16 +40,17 @@ fetchData();
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <Provider store={store}>
+    <ModeProvider>
+      <CartProvider>
 
-    <CartProvider>
+        <WishlistProvider>
 
-      <WishlistProvider>
+          <App />
 
-        <App />
+        </WishlistProvider>
 
-      </WishlistProvider>
-      
-    </CartProvider>
+      </CartProvider>
+    </ModeProvider>
 
 
   </Provider>

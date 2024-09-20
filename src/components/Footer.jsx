@@ -74,8 +74,8 @@ const Footer = () => {
                 <span>From App Store Or Google Play</span>
 
                 <div className="store d-flex ">
-                <img className='app-store' src="https://modinatheme.com/foodking/wp-content/uploads/2024/02/app-store.png" />
-                <img className='google-play' src="https://modinatheme.com/foodking/wp-content/uploads/2024/02/google-play.png"  />
+               <a href="https://www.apple.com/app-store/"> <img className='app-store' src="https://modinatheme.com/foodking/wp-content/uploads/2024/02/app-store.png" /></a>
+               <a href="https://play.google.com/store/games?device=windows"> <img className='google-play' src="https://modinatheme.com/foodking/wp-content/uploads/2024/02/google-play.png"  /></a>
                 </div>
                 
                 <span>24/7 SUPPORT CENTER</span>

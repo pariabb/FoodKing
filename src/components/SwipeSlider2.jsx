@@ -23,6 +23,14 @@ const SwipeSlider2 = () => {
       autoplay: true,
       autoplaySpeed: 1500,
     }
+    const set2={
+      infinite: true,
+      speed: 600,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+    }
     
       const logos = [
         { id: 1, imageUrl: 'https://modinatheme.com/foodking/wp-content/uploads/2024/02/01.svg' },
@@ -37,7 +45,7 @@ const SwipeSlider2 = () => {
   return (
 
   <>
-    <Slider 
+    <Slider className='slider-one'
      {...set}>
     {logos.map((logo) => (
         <div key={logo.id} className="carousel-card mt-5 mb-5">
@@ -48,8 +56,19 @@ const SwipeSlider2 = () => {
         </div>
     ))}
   </Slider>
-    <Slider className='d-none' 
+    <Slider className='d-none slider-two' 
      {...set1}>
+    {logos.map((logo) => (
+        <div key={logo.id} className="carousel-card mt-5 mb-5">
+          <div className="logo-img d-flex justify-content-center align-items-center mb-5 ">
+            <img src={logo.imageUrl}  />
+          </div>
+     
+        </div>
+    ))}
+  </Slider>
+  <Slider className='d-none slider-three' 
+     {...set2}>
     {logos.map((logo) => (
         <div key={logo.id} className="carousel-card mt-5 mb-5">
           <div className="logo-img d-flex justify-content-center align-items-center mb-5 ">

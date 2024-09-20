@@ -25,7 +25,7 @@ const Login = () => {
                 setTimeout(() => {
                     window.location.reload();
                 }, 2000);
-                navigate('/');
+                navigate('/dashboard');
             } else {
                 const createLogin = (user) => {
                     localStorage.setItem('login', 'true');

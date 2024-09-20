@@ -1,180 +1,364 @@
-.main-footer {
-    background-color: #F4F1EA;
-
-    .footer-image-one {
-        width: 130px;
-        height: 128px;
-        position: relative;
-        z-index: 999;
-        transform: translate(25px, 110px);
-        animation: mymove 8s infinite;
-    }
-
- 
-
-    .footer-image-two {
-        width: 87px;
-        height: 105px;
-        position: relative;
-        z-index: 999;
-        right: 0;
-        transform: translate(1200px, 115px);
-        animation: mymove 8s infinite;
-
-    }
-
-    .footer-wrapper {
-        width: auto;
-        height: 460px;
-        position: relative;
-        z-index: 1000;
-        
-        p {
-            color: #7b7b7b;
-            margin: 30px 0px 30px 0px;
-            font-weight: 500;
+.light{
+    .main-footer {
+        background-color: #F4F1EA;
+    
+        .footer-image-one {
+            width: 130px;
+            height: 128px;
+            position: relative;
+            z-index: 999;
+            transform: translate(25px, 110px);
+            animation: mymove 8s infinite;
         }
-
-        .example {
-            span {
-                color: #5a5a5a;
-                margin-top: 10px;
-                margin-bottom: 15px;
-                font-weight: 600;
-            }
-
-            .examplea {
-                font-size: 20px;
-                font-weight: 700;
-                color: #00A149;
-                text-decoration: none;
-                margin-bottom: 30px;
-
-
-            }
+    
+     
+    
+        .footer-image-two {
+            width: 87px;
+            height: 105px;
+            position: relative;
+            z-index: 999;
+            right: 0;
+            transform: translate(1200px, 115px);
+            animation: mymove 8s infinite;
+    
         }
-
-        .icon-list {
-            list-style: none;
-            display: flex;
-            margin: 0 !important;
-            padding: 0 !important;
-            gap: 20px;
-
-
-
-            li {
-                width: 40px;
-                height: 40px;
-                background-color: #E4E1DB;
-                border-radius: 50%;
-                text-align: center;
-
-                a {
-
-                    color: #000 !important;
-                    line-height: 40px;
-                    font-size: 16px;
-
+    
+        .footer-wrapper {
+            width: auto;
+            height: 460px;
+            position: relative;
+            z-index: 1000;
+            
+            p {
+                color: #7b7b7b;
+                margin: 30px 0px 30px 0px;
+                font-weight: 500;
+            }
+    
+            .example {
+                span {
+                    color: #5a5a5a;
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                    font-weight: 600;
                 }
-
-            }
-
-            li:hover {
-                background-color: #00A149;
-
-                a {
-                    color: #F4F1EA !important;
-                }
-
-            }
-
-        }
-
-        h5 {
-            font-weight: 700;
-            margin-bottom: 30px;
-            margin-left: 20px;
-        }
-
-        .links {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-
-            li {
-                a {
-                    text-decoration: none;
-                    color: #4b4b4b;
-                    transition: all .5s;
-                    font-weight: 500;
-                }
-            }
-
-            li:hover {
-                a {
+    
+                .examplea {
+                    font-size: 20px;
+                    font-weight: 700;
                     color: #00A149;
-                    position: relative;
-                    padding-left: 20px;
+                    text-decoration: none;
+                    margin-bottom: 30px;
+    
+    
                 }
             }
-
-        }
-
-        p {
-            .unic {
-                color: #D12121;
+    
+            .icon-list {
+                list-style: none;
+                display: flex;
+                margin: 0 !important;
+                padding: 0 !important;
+                gap: 20px;
+    
+    
+    
+                li {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #E4E1DB;
+                    border-radius: 50%;
+                    text-align: center;
+    
+                    a {
+    
+                        color: #000 !important;
+                        line-height: 40px;
+                        font-size: 16px;
+    
+                    }
+    
+                }
+    
+                li:hover {
+                    background-color: #00A149;
+    
+                    a {
+                        color: #F4F1EA !important;
+                    }
+    
+                }
+    
             }
-        }
-
-        .address {
-            font-size: 21px;
-            font-weight: 700;
-        }
-
-        h6 {
-            font-weight: 700;
-            font-size: 18px;
-        }
-
-        .install {
-            h6 {
-                margin-bottom: 20px;
+    
+            h5 {
+                font-weight: 700;
+                margin-bottom: 30px;
+                margin-left: 20px;
             }
-
-            span {
-                margin: 40px 0px 20px 0px !important;
+    
+            .links {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+    
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #4b4b4b;
+                        transition: all .5s;
+                        font-weight: 500;
+                    }
+                }
+    
+                li:hover {
+                    a {
+                        color: #00A149;
+                        position: relative;
+                        padding-left: 20px;
+                    }
+                }
+    
             }
-
-            h3 {
-                color: #00A149;
-                margin-top: 20px;
+    
+            p {
+                .unic {
+                    color: #D12121;
+                }
+            }
+    
+            .address {
+                font-size: 21px;
                 font-weight: 700;
             }
-
-            .store {
-                margin: 20px 0px 20px 0px;
-
-                .app-store {
-                    width: 115px;
-                    height: 37px;
-                    margin-top: 3px;
-                    margin-right: 8px;
+    
+            h6 {
+                font-weight: 700;
+                font-size: 18px;
+            }
+    
+            .install {
+                h6 {
+                    margin-bottom: 20px;
                 }
-
-                .google-play {
-                    width: 127px;
-                    height: 45px;
+    
+                span {
+                    margin: 40px 0px 20px 0px !important;
+                }
+    
+                h3 {
+                    color: #00A149;
+                    margin-top: 20px;
+                    font-weight: 700;
+                }
+    
+                .store {
+                    margin: 20px 0px 20px 0px;
+    
+                    .app-store {
+                        width: 115px;
+                        height: 37px;
+                        margin-top: 3px;
+                        margin-right: 8px;
+                    }
+    
+                    .google-play {
+                        width: 127px;
+                        height: 45px;
+                    }
+                }
+    
+            }
+    
+        }
+    
+    }
+    
+}
+.dark{
+    .main-footer {
+        background-color: #000000;
+        margin-top: 0 !important;
+    
+        .footer-image-one {
+            width: 130px;
+            height: 128px;
+            position: relative;
+            z-index: 999;
+            transform: translate(25px, 110px);
+            animation: mymove 8s infinite;
+        }
+    
+     
+    
+        .footer-image-two {
+            width: 87px;
+            height: 105px;
+            position: relative;
+            z-index: 999;
+            right: 0;
+            transform: translate(1200px, 115px);
+            animation: mymove 8s infinite;
+    
+        }
+    
+        .footer-wrapper {
+            width: auto;
+            height: 460px;
+            position: relative;
+            z-index: 1000;
+            color: #fff !important;
+            
+            p {
+                color: #ffffff;
+                margin: 30px 0px 30px 0px;
+                font-weight: 500;
+            }
+    
+            .example {
+                span {
+                    color: #ffffff;
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                }
+    
+                .examplea {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #00A149;
+                    text-decoration: none;
+                    margin-bottom: 30px;
+    
+    
                 }
             }
-
+    
+            .icon-list {
+                list-style: none;
+                display: flex;
+                margin: 0 !important;
+                padding: 0 !important;
+                gap: 20px;
+    
+    
+    
+                li {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #E4E1DB;
+                    border-radius: 50%;
+                    text-align: center;
+    
+                    a {
+    
+                        color: #000000 !important;
+                        line-height: 40px;
+                        font-size: 16px;
+    
+                    }
+    
+                }
+    
+                li:hover {
+                    background-color: #00A149;
+    
+                    a {
+                        color: #000000 !important;
+                    }
+    
+                }
+    
+            }
+    
+            h5 {
+                font-weight: 700;
+                margin-bottom: 30px;
+                margin-left: 20px;
+                color: #fff;
+            }
+    
+            .links {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+    
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        transition: all .5s;
+                        font-weight: 500;
+                    }
+                }
+    
+                li:hover {
+                    a {
+                        color: #00A149;
+                        position: relative;
+                        padding-left: 20px;
+                    }
+                }
+    
+            }
+    
+            p {
+                .unic {
+                    color: #D12121;
+                }
+            }
+    
+            .address {
+                font-size: 21px;
+                font-weight: 700;
+            }
+    
+            h6 {
+                font-weight: 700;
+                font-size: 18px;
+            }
+    
+            .install {
+                h6 {
+                    margin-bottom: 20px;
+                }
+    
+                span {
+                    margin: 40px 0px 20px 0px !important;
+                }
+    
+                h3 {
+                    color: #00A149;
+                    margin-top: 20px;
+                    font-weight: 700;
+                }
+    
+                .store {
+                    margin: 20px 0px 20px 0px;
+    
+                    .app-store {
+                        width: 115px;
+                        height: 37px;
+                        margin-top: 3px;
+                        margin-right: 8px;
+                    }
+    
+                    .google-play {
+                        width: 127px;
+                        height: 45px;
+                    }
+                }
+    
+            }
+    
         }
-
+    
     }
-
+    
 }
-
 .footer-bottom {
     background-color: #00A149;
     padding: 30px 0px 30px 0px;
