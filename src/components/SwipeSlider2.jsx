@@ -26,7 +26,7 @@ const SwipeSlider2 = () => {
     const set2={
       infinite: true,
       speed: 600,
-      slidesToShow: 3,
+      slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 1500,

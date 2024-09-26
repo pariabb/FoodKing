@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import SingleProduct from '../components/SingleProduct';
 import { useSelector } from 'react-redux';
 import supabase from '../supabase/connectdb';
+import { useTranslation } from 'react-i18next';
+
 
 const Shop = () => {
+  const { t } = useTranslation();
+
   const data = useSelector(p => p);
   const [category, setCategory] = useState([]);
   const [filtered, setFiltered] = useState([]);
@@ -69,8 +73,8 @@ const Shop = () => {
       <section className='page-img'>
         <div className="container">
           <div className="page-heading center">
-            <h1 className='mb-3'>SHOP</h1>
-            <p><Link to='/' className='home-link'>Home <i className="fa-solid fa-greater-than"></i></Link> <span>Shop</span></p>
+            <h1 className='mb-3'>{t("header.menu3")}</h1>
+            <p><Link to='/' className='home-link'>{t("header.menu1")} <i className="fa-solid fa-greater-than"></i></Link> <span>{t("header.menu3")}</span></p>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
-.shop {
+.light{
+  .shop {
     background-color: rgb(246, 246, 246);
     .catagories {
        
@@ -38,6 +39,19 @@
             }
         }
     }
+}
+}
+
+.dark{
+  .shop {
+    background-color: rgb(23, 23, 23);
+     
+    h5{
+      color: #fff !important;
+      margin-bottom: 20px !important;
+    }
+    
+  }
 }
 @media (min-width: 768px) {
     .card {

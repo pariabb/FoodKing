@@ -1,23 +1,85 @@
 {
-    "header":{
-        "menu1":"Ana səhifə",
-        "menu2":"Haqqımızda",
-        "menu3":"Məhsullar",
-        "menu4":"Bloq",
-        "menu5":"Suallar",
-        "menu6":"Əlaqə",
-        "salam":"Salam,Pari",
-        "dashboard":"Admin Panel",
-        "logout":"Çıxış",
-        "login":"Daxil ol",
-        "text1":"Kuryerlə əlaqə saxlamadan 100% Təhlükəsiz çatdırılma",
-        "text2":"Sifarişinizi İzləyin",
-        "text3":"Bu, biznes və onun müştəriləri arasında qarşılıqlı əlaqəni əhatə edir. Bu, müştərilərin ehtiyaclarını ödəmək və problemlərini həll etməkdir. Effektiv müştəri xidməti vacibdir."
-
-
-
-
-
-
+    "header": {
+        "menu1": "Ana səhifə",
+        "menu2": "Haqqımızda",
+        "menu3": "Məhsullar",
+        "menu4": "Bloq",
+        "menu5": "Suallar",
+        "menu6": "Əlaqə",
+        "salam": "Salam",
+        "dashboard": "Admin Panel",
+        "logout": "Çıxış",
+        "login": "Daxil ol",
+        "text1": "Kuryerlə əlaqə saxlamadan 100% Təhlükəsiz çatdırılma",
+        "text2": "Sifarişinizi İzləyin",
+        "text3": "Bu, biznes və onun müştəriləri arasında qarşılıqlı əlaqəni əhatə edir. Bu, müştərilərin ehtiyaclarını ödəmək və problemlərini həll etməkdir. Effektiv müştəri xidməti vacibdir."
+    },
+    "home": {
+        "coursel": {
+            "text1": "Xırtıldayan, Hər Loxma Dadı",
+            "text2": "Ən Çox Sevilən Yeməklər",
+            "text3": "DADLI",
+            "text4": " QIZARMIŞ",
+            "text5": "TOYUQ",
+            "text6": "ƏLA",
+            "text7": "SEVİMLİ",
+            "text8": "Sifariş et",
+            "text9": "SUPER ",
+            "text10": "QLOBAL ",
+            "text11": "BİZİMLƏ XOŞBƏXT SPONSORLAR",
+            "text12": "20% QƏNAƏT ET",
+            "text13": "Bugünün",
+            "text14": "Astackin ",
+            "text15": "Günü",
+            "text16": "Gril edilmiş ",
+            "text17": "Toyuq $59.00",
+            "text18": "ƏN SEVİLƏN FASTFOODLAR",
+            "text19": "Daha Çox",
+            "text20": "Bu bir şansdır",
+            "text21": "30 DƏQİQƏYƏ",
+            "text22": "ÇATDIRILMA!",
+            "text23": "Əgər görüş keçirirsinizsə, gecə gec saatlarda işləyirsinizsə və əlavə təkan lazımdır. Bizə bildirin və biz orada olaq"
+        }
+    },
+    "footer": {
+        "text1": "Onun heyrətamiz şeylər etmək gücünə malik olduğuna inanırıq.",
+        "text2": "Bizimlə maraqlanırsız?",
+        "text3": "Lİnklər",
+        "text4": " Xidmətlər",
+        "text5": "Şirkət haqqında",
+        "text6": "Son Xəbərlər",
+        "text7": "Bloqlar",
+        "text8": "Mənim hesabım",
+        "text9": "Mənim sifariş listim",
+        "text10": "Mənim favorilərim ",
+        "text11": "Sifariş izləməsi",
+        "text12": "Səbət",
+        "text13": "Ünvan:",
+        "text14": "Saat:",
+        "text15": "Bazar ertəsindən Cüməyə qədər",
+        "text16": "Yükləmək üçün proqramlar",
+        "text17": "App Store'dan və ya Google Play'dən",
+        "text18": "24/7 DƏSTƏK XİDMƏTİ",
+        "text19": " Bütün hüquqlar qorunur."
+    },
+    "about": {
+        "text1": "Foodkingə Xoşgəlmisiz",
+        "text2": "Biz etdiyimiz hər şeyin mərkəzində keyfiyyətli inqrediyentlər və müştəri məmnuniyyəti ilə ən yaxşı yemək təcrübəsini təqdim etməyə sadiqik.",
+        "text3": "Müxtəlif yeməklərlə biz hər yeməyin ləzzətli bir təcrübə olmasını təmin edirik. Aşpazlarımız nəinki gözəl dadlı, həm də sağlam və təzə olan yeməklərin hazırlanmasında mütəxəssislərdir.",
+        "text4": "Menyumuzu Görün",
+        "text5": "Bizi niyə seçdiz?",
+        "text6": "Keyfiyyətli Yemək",
+        "text7": "Bizim inqrediyentlərimiz yüksək keyfiyyətli qida təmin etmək üçün ən yaxşı təchizatçılardan alınır.",
+        "text8": "Müştəri Məmnuniyyəti",
+        "text9": "Biz müştəri xidmətinə diqqət yetirərək, hər bir müştərinin öz yeməklərindən məmnun qalmasını təmin edirik.",
+        "text10": "Sürətli Çatdırılma",
+        "text11": "Yeməklərinizi isti və təzə, qısa zamanda qapınıza çatdırın.",
+        "text12": "Komandamızla tanış olun",
+        "text13": "Baş Şef",
+        "text14": "Con heyrətamiz yeməklər və ləzzətlər yaratmaq həvəsi ilə kulinariya komandamıza rəhbərlik edir.",
+        "text15": "Restoran Meneceri",
+        "text16": "Jane restoranda hər şeyin düzgün işləməsini təmin edir və qonaqlarımıza qayğı göstərir.",
+        "text17": "Xəmir Aşpazı",
+        "text18": "Emma hər kəsin sevdiyi ləzzətli xəmirləri və desertləri ilə tanınır."
     }
 }

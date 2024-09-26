@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -16,8 +16,12 @@ import AddProduct from './pages/dashboard/AddProduct';
 import EditProduct from './pages/dashboard/EditProduct';
 import Wishlist from './pages/Wishlist';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import ProductDetails from './pages/ProductDetails';
 import { ModeContext } from './context/ModeContext';
+import SuccesfulCheckOut from './pages/SuccesfulCheckOut';
+import Preloader from './components/Preloader';
+import AdminLogin from './auth/AdminLogin';
 
 const Main = () => {
   return (
@@ -31,6 +35,7 @@ const Main = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/adminlogin" element={<AdminLogin />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/add" element={<AddProduct />} />
@@ -38,8 +43,11 @@ const Main = () => {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/succesfulcheckout" element={<SuccesfulCheckOut />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+
       <Footer />
     </>
   );
@@ -48,10 +56,18 @@ const Main = () => {
 const App = () => {
   const [mode] = useContext(ModeContext);
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000); 
+  }, []);
+
   return (
     <BrowserRouter>
       <div className={mode}>
-        <Main />
+        {loading ? <Preloader /> : <Main />}
       </div>
     </BrowserRouter>
   );

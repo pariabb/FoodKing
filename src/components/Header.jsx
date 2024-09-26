@@ -6,7 +6,7 @@ import i18next from '../i18n/i18next';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import { ModeContext } from '../context/ModeContext';
-import { IoSunny ,IoMoon} from "react-icons/io5";
+import { IoSunny, IoMoon } from "react-icons/io5";
 
 const Header = () => {
     const { totalItems } = useCart();
@@ -27,6 +27,7 @@ const Header = () => {
 
     const changeLang = (lang) => {
         i18next.changeLanguage(lang)
+        localStorage.setItem('i18nextLng', lang); 
     }
 
     const { t } = useTranslation();
@@ -96,7 +97,7 @@ const Header = () => {
                         </div>
 
                         <div className="header-right">
-                            <div className="dropdown">
+                            <div className="dropdown lang">
                                 <button className="btn " style={{ border: 'none' }} type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i className="fa-solid fa-language "></i>
                                 </button>
@@ -108,13 +109,13 @@ const Header = () => {
                             <button onClick={() => {
                                 mode === "light" ? setMode("dark") : setMode("light");
                                 mode === "light" ? localStorage.setItem("mode", "dark") : localStorage.setItem("mode", "light");
-                            }} type="button" className="btn btn-success text-center align-items-center justify-content-center " style={{paddingTop:"0"}}>
+                            }} type="button" className="btn mode btn-success text-center align-items-center justify-content-center " style={{ paddingTop: "0" }}>
                                 {mode === "light" ? <IoMoon className='mode-icons' /> : <IoSunny className='mode-icons' />}
                             </button>
-                            <NavLink to='/wishlist'>
+                            <NavLink to='/wishlist' className='wish'>
                                 <i className="fa-solid fa-heart"></i>
                             </NavLink>
-                            <NavLink className="nav-link active position-relative" to='/cart'>
+                            <NavLink className="nav-link active position-relative header-cart" to='/cart'>
                                 <span><i className="fa-solid fa-basket-shopping"></i></span>
                                 <span className="position-absolute translate-middle badge rounded-pill bg-dark cart-top d-flex justify-content-center align-items-center text-center">
                                     {(isLoggedIn || isAdmin) ? (totalItems > 0 ? totalItems : 0) : 0}
@@ -126,20 +127,18 @@ const Header = () => {
                             {isAdmin ? (
                                 <div className="dropdown">
                                     <button className="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        {t('header.salam')}
+                                        {t('header.salam')},Pari
                                     </button>
                                     <ol className="dropdown-menu custom-dropdown-width mt-1 w-25">
-                                        {/* <li><NavLink className="btn text-success" to="/admin"><i className="fa-solid fa-user"></i></NavLink></li> */}
                                         <li><button className="btn btn-success ms-2" onClick={logout}>{t("header.logout")}</button></li>
                                     </ol>
                                 </div>
                             ) : isLoggedIn ? (
                                 <div className="dropdown">
                                     <button className="btn btn-danger dropdown-toggle mx-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hi, {localStorage.getItem('username')}
+                                    {t('header.salam')}, {localStorage.getItem('username')}
                                     </button>
                                     <ol className="dropdown-menu custom-dropdown-width mt-1 w-25">
-                                        {/* <li><NavLink className="btn" to="/admin"><i className="fa-solid fa-user"></i></NavLink></li> */}
                                         <li><button className="btn btn-success ms-4" onClick={logout}>{t("header.logout")}</button></li>
                                     </ol>
                                 </div>
@@ -165,6 +164,55 @@ const Header = () => {
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" />
                 </div>
                 <div className="offcanvas-body mt-1">
+                    <ul className="navbar-nav me-auto mx-auto ms-1 d-none">
+                        <li className="nav-item">
+                            <NavLink to='/' className="nav-link active" aria-current="page">{t("header.menu1")}</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/about' className="nav-link active" aria-current="page">{t("header.menu2")}</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/shop' className="nav-link active" aria-current="page">{t("header.menu3")}</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/blog' className="nav-link active" aria-current="page">{t("header.menu4")}</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/faq' className="nav-link active" aria-current="page">{t("header.menu5")}</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to='/contact' className="nav-link active" aria-current="page">{t("header.menu6")}</NavLink>
+                        </li>
+                    </ul>
+                    <div className="header-right d-none ">
+                        <div className="dropdown my-2">
+                            <button className="btn " style={{ border: 'none' }} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i className="fa-solid fa-language "></i>
+                            </button>
+                            <ol className="dropdown-menu custom-dropdown-width mt-1 w-25">
+                                <li><button className='btn btn-success mb-1 ' onClick={() => changeLang('az')} >AZ</button></li>
+                                <li><button className='btn btn-danger ' onClick={() => changeLang('en')} >EN</button> </li>
+                            </ol>
+                        </div>
+                        <button onClick={() => {
+                            mode === "light" ? setMode("dark") : setMode("light");
+                            mode === "light" ? localStorage.setItem("mode", "dark") : localStorage.setItem("mode", "light");
+                        }} type="button" className="btn me-3  btn-success text-center align-items-center justify-content-center " style={{ paddingTop: "0" }}>
+                            {mode === "light" ? <IoMoon className='mode-icons' /> : <IoSunny className='mode-icons' />}
+                        </button>
+                        <NavLink to='/wishlist'>
+                            <i className="fa-solid fa-heart"></i>
+                        </NavLink>
+                        <NavLink className="nav-link active position-relative my-4" to='/cart'>
+                            <span><i className="fa-solid fa-basket-shopping"></i></span>
+                            <span className="position-absolute translate-middle badge rounded-pill bg-dark cart-top d-flex justify-content-center align-items-center text-center">
+                                {(isLoggedIn || isAdmin) ? (totalItems > 0 ? totalItems : 0) : 0}
+                                <span className="visually-hidden">unread messages</span>
+                            </span>
+                        </NavLink>
+                        {isAdmin && <NavLink to='/dashboard' className='header-btn2 mb-3'>{t("header.dashboard")}</NavLink>}
+
+                    </div>
                     <h6 className='mb-2'>{t("header.text3")}</h6>
                     <div className="mini-pics d-flex flex-wrap gap-2">
                         <img src="https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/gallery-2.jpg" alt="" />

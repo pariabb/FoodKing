@@ -4,9 +4,13 @@ import { useRef} from 'react'
 import swal from "sweetalert";
 import supabase from "../supabase/connectdb";
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Register = () => {
   const navigate=useNavigate();
+
+  const { t } = useTranslation();
+
 
   const fullnameRef = useRef(null);
   const birthdayRef = useRef(null);

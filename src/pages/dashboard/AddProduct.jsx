@@ -6,14 +6,14 @@ import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 
 const AddProduct = () => {
-  const dispatch  = useDispatch();
+  const dispatch = useDispatch();
   const navigate = useNavigate();
-    return (
+  return (
     <div>
       <h1 className='text-center my-5'>Add product</h1>
-      <ProductForm sendForm={(fd)=>{
+      <ProductForm sendForm={(fd) => {
         dispatch(addProductToDatabase(fd));
-        swal("Product added","","success");
+        swal("Product added", "", "success");
       }} />
     </div>
   )

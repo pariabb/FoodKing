@@ -1,11 +1,9 @@
 import i18n from "i18next";
-import detector from "i18next-browser-languagedetector";
-import backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
-import en from '../locales/en/translation.json'
-import az from '../locales/az/translation.json'
+import en from '../locales/en/translation.json';
+import az from '../locales/az/translation.json';
 
-
+const savedLang = localStorage.getItem('i18nextLng') || 'en';
 
 i18n
   .use(initReactI18next)
@@ -18,8 +16,8 @@ i18n
         translation: az,
       },
     },
-    lng: 'en', 
-    fallbackLng: 'en',
+    lng: savedLang, 
+    fallbackLng: 'en', 
     interpolation: {
       escapeValue: false, 
     },

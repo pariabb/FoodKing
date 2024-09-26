@@ -10,8 +10,7 @@ const SingleProduct = ({ alldata }) => {
 
   return (
     <div className="card">
-
-
+      
       <div className="card-img-top mt-1">
         <div>
      

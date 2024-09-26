@@ -2,8 +2,13 @@ import React from 'react';
 import { useWishlist } from 'react-use-wishlist';
 import { useCart } from 'react-use-cart';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 
 const Wishlist = () => {
+
+  const { t } = useTranslation();
+
   const { addItem } = useCart();
   const {
     isWishlistEmpty,
@@ -40,22 +45,24 @@ const Wishlist = () => {
           </div>
         </div>
       </section>
-      <div className="pb-5 wishlist my-4">
+      <div className="pb-5 wishlist py-4">
         <div className="container mb-3">
           <div className="row">
             {items.map((item) => (
               <div className="col-12 col-lg-4 col-md-6 col-sm-12 g-4 my-3" key={item.id}>
-                <Link to={`/product/${item.id}`} className="card text-decoration-none">
+                <div className="card text-decoration-none">
                   <div className="card-img-top mt-1">
                     <button className="favories" onClick={() => removeWishlistItem(item.id)}>
                       <i className="fa-solid fa-heart favori-icon wish-icon"></i>
                     </button>
+                    <Link to={`/product/${item.id}`}>
                     <img
                       src={item.img}
                       height={245}
                       style={{ objectFit: 'contain' }}
                       alt={item.title}
                     />
+                    </Link>
                   </div>
                   <div className="card-body">
                     <p className="text-center mt-3">${item.price}</p>
@@ -84,7 +91,7 @@ const Wishlist = () => {
                       Remove
                     </button>
                   </div>
-                </Link>
+                </div>
               </div>
             ))}
           </div>

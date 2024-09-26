@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBuilding, FaPhoneAlt } from "react-icons/fa";
 import { CiClock2 } from "react-icons/ci";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -34,8 +37,8 @@ const Contact = () => {
             <section className='page-img '>
                 <div className="container">
                     <div className="page-heading center">
-                        <h1 className='mb-3'>Contact Us</h1>
-                        <p><Link to='/' className='home-link'>Home <i className="fa-solid fa-greater-than"></i></Link> <span>Contact Us</span></p>
+                        <h1 className='mb-3'>{t("header.menu6")}</h1>
+                        <p><Link to='/' className='home-link'>{t("header.menu1")}<i className="fa-solid fa-greater-than"></i></Link> <span>{t("header.menu6")}</span></p>
                     </div>
                 </div>
             </section>

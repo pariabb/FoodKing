@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const FAQ = () => {
-    // Set the initial value to 1 so the first answer is visible on page load
+    const { t } = useTranslation();
+
     const [isVisible, setIsVisible] = useState(1);
 
     const toggleInfo = (value) => {
@@ -20,8 +22,8 @@ const FAQ = () => {
                 <section className='page-img '>
                     <div className="container">
                         <div className="page-heading center">
-                            <h1 className='mb-3' >FAQ</h1>
-                            <p><Link to='/' className='home-link'>Home   <i className="fa-solid fa-greater-than"></i>  </Link> <span>FAQ's</span> </p>
+                            <h1 className='mb-3' >{t("header.menu5")}</h1>
+                            <p><Link to='/' className='home-link'>{t("header.menu1")}  <i className="fa-solid fa-greater-than"></i>  </Link> <span>{t("header.menu5")}</span> </p>
                         </div>
                     </div>
                 </section>

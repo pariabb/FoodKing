@@ -6,3 +6,18 @@ h2{
 .table-responsive {
     overflow-x: auto;
 }
+
+.dark{
+    .cart{
+        background-color: #212121;
+    }
+
+    table,thead,tbody,th,tr,td{
+        background-color: #212121 !important;
+        color: #fff !important;
+
+    }
+    h3{
+        color: #fff;
+    }
+}

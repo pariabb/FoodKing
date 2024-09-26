@@ -5,8 +5,12 @@ import { useWishlist } from 'react-use-wishlist';
 import swal from 'sweetalert'; 
 import supabase from '../supabase/connectdb';
 import WishBtn from '../components/WishBtn';
+import { useTranslation } from 'react-i18next';
 
 const ProductDetails = ({alldata}) => {
+
+  const { t } = useTranslation();
+
   const { id } = useParams();
   const { addItem } = useCart();
   const { items } = useWishlist();

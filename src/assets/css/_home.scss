@@ -1,29 +1,29 @@
-.light{
+.light {
     .popular-items {
         background-color: #F4F1EA;
-    
-  
+
+
         .carousel-container {
             width: 80%;
             margin: auto;
             padding: 40px 0;
-    
+
             p {
                 font-size: 20px;
                 font-family: oswald-bold;
                 color: #00A149;
                 margin: 20px 0px;
-    
+
             }
-    
+
             h1 {
                 font-size: 60px;
                 font-family: oswald-bold;
                 color: #000;
                 margin: 20px 0px 50px 0px;
-    
+
             }
-    
+
             .carousel-card {
                 width: 280px !important;
                 height: 394px !important;
@@ -41,43 +41,43 @@
                 background-size: contain;
                 margin-bottom: 50px;
                 box-sizing: border-box;
-    
+
                 &:hover {
                     background-color: #D12121;
                     transition: ease-out .5s;
-    
+
                     h3 {
                         color: #fff !important;
                     }
-    
+
                     p {
                         color: #fff !important;
-    
+
                     }
                 }
-    
+
                 .card-img {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 240px;
-    
+
                     .carousel-card img {
                         width: 100%;
                         height: auto;
                         object-fit: cover;
-    
+
                     }
                 }
-    
+
                 .card-content {
                     h3 {
                         font-family: oswald-bold;
                         color: #000;
-    
+
                     }
-    
-    
+
+
                     p {
                         color: #D12121;
                         font-size: 18px;
@@ -86,38 +86,40 @@
 
             }
         }
-    } 
+    }
 }
-.dark{
+
+.dark {
     .popular-items {
         background-color: #1a1a1a;
-    
-        .swiper{
-            h5{
+
+        .swiper {
+            h5 {
                 color: #fff;
             }
         }
+
         .carousel-container {
             width: 80%;
             margin: auto;
             padding: 40px 0;
-    
+
             p {
                 font-size: 20px;
                 font-family: oswald-bold;
                 color: #fff;
                 margin: 20px 0px;
-    
+
             }
-    
+
             h1 {
                 font-size: 60px;
                 font-family: oswald-bold;
                 color: #fff;
                 margin: 20px 0px 50px 0px;
-    
+
             }
-    
+
             .carousel-card {
                 width: 280px !important;
                 height: 394px !important;
@@ -135,43 +137,43 @@
                 background-size: contain;
                 margin-bottom: 50px;
                 box-sizing: border-box;
-    
+
                 &:hover {
                     background-color: #D12121;
                     transition: ease-out .5s;
-    
+
                     h3 {
                         color: #fff !important;
                     }
-    
+
                     p {
                         color: #fff !important;
-    
+
                     }
                 }
-    
+
                 .card-img {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     height: 240px;
-    
+
                     .carousel-card img {
                         width: 100%;
                         height: auto;
                         object-fit: cover;
-    
+
                     }
                 }
-    
+
                 .card-content {
                     h3 {
                         font-family: oswald-bold;
                         color: #fff;
-    
+
                     }
-    
-    
+
+
                     p {
                         color: #D12121;
                         font-size: 18px;
@@ -179,12 +181,13 @@
                 }
 
             }
-   
+
         }
-    
+
     }
-    
+
 }
+
 .left {
     width: 513px;
     height: 350px;
@@ -226,7 +229,8 @@
             left: 10px;
             animation: scale-up-two 6s infinite linear;
         }
-        .burger{
+
+        .burger {
             position: absolute;
             animation: rotate 4s infinite linear;
             right: 70px;
@@ -248,38 +252,42 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 40px;
-    
-    .pizza{
+
+    .pizza {
         position: absolute;
         width: 397px;
         height: 349px;
         right: 0;
         top: 0;
-        
+
     }
-    .pizza-text2{
+
+    .pizza-text2 {
         position: relative;
         top: -125px;
         right: 30px;
         animation: rotate 4s infinite linear;
 
     }
-    .pizza-text1{
+
+    .pizza-text1 {
         animation: scale-up-two 6s infinite linear;
 
     }
- 
+
 
 
 }
-.swiper{
-    h5{
+
+.swiper {
+    h5 {
         font-family: oswald-bold;
         font-size: 20px;
         margin-top: 110px;
         margin-left: 10px;
     }
-    span{
+
+    span {
         color: #FFC222;
     }
 }
@@ -287,70 +295,81 @@
 .left:hover .main-food {
     animation: scale-up 2s linear;
 }
-.right:hover .pizza{
+
+.right:hover .pizza {
     animation: scale-up 2s linear;
 
 }
 
-.logo-img:hover img{
+.logo-img:hover img {
     filter: brightness(0.5) contrast(1.2);
     transition: ease .3s;
 }
 
-.dark-section{
+.dark-section {
     width: 100%;
     height: 90vh;
     background-image: url('https://modinatheme.com/foodking/wp-content/uploads/2024/02/main-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    .patato{
-        transform: translate(-650px,265px);
+
+    .patato {
+        transform: translate(-650px, 265px);
     }
-    .tomato{
-        transform: translate(650px,295px);
+
+    .tomato {
+        transform: translate(650px, 295px);
     }
-    .pizza-text2{
+
+    .pizza-text2 {
         margin-top: 380px;
         margin-right: 60px;
         animation: rotate 4s infinite linear;
 
     }
-    .spicy{
+
+    .spicy {
         position: relative;
         right: 120px;
-    margin-bottom:210px;
-    animation: rotate-two 8s infinite linear;
-    
+        margin-bottom: 210px;
+        animation: rotate-two 8s infinite linear;
+
     }
-    .text{
+
+    .text {
         margin-top: 80px;
         color: #fff;
         font-family: oswald-bold;
-        h4{
-           font-size: 28px; 
-           margin-bottom: 20px;
+
+        h4 {
+            font-size: 28px;
+            margin-bottom: 20px;
         }
-        h1{
+
+        h1 {
             font-size: 60px;
             margin-bottom: 20px;
 
 
         }
-        h3{
+
+        h3 {
             font-size: 36px;
         }
-        span{
-            color:#FFC222;
+
+        span {
+            color: #FFC222;
         }
-        .home-btn{
+
+        .home-btn {
             background-color: #00A149;
             font-size: 22px;
             font-family: oswald-semibold;
             color: #fff;
             width: 190px;
             height: 60px;
-            border-radius: 8px ;
+            border-radius: 8px;
             border: none;
             text-align: center;
             display: flex;
@@ -359,57 +378,58 @@
             text-decoration: none;
             margin-top: 50px;
             margin-left: 10px;
-    
-    
-            &:hover{
-                background-color:#D12121 ;
+
+
+            &:hover {
+                background-color: #D12121;
                 transition: ease-in .4s;
             }
         }
-        
-       
+
+
     }
 }
-.light{
-    .fastfoods{
-        
+
+.light {
+    .fastfoods {
+
         p {
             font-size: 20px;
             font-family: oswald-bold;
             color: #00A149;
             margin: 20px 0px;
-    
+
         }
-    
+
         h1 {
             font-size: 60px;
             font-family: oswald-bold;
             color: #000;
             margin: 20px 0px 50px 0px;
-    
+
         }
-    
-        .row{
-            p{
+
+        .row {
+            p {
                 color: black !important;
             }
-    
-         
+
+
         }
-    
-        .card:hover p{
+
+        .card:hover p {
             cursor: pointer;
             color: #F4F1EA !important;
         }
-    
-        .home-btn{
+
+        .home-btn {
             background-color: #00A149;
             font-size: 22px;
             font-family: oswald-semibold;
             color: #fff;
             width: 190px;
             height: 60px;
-            border-radius: 8px ;
+            border-radius: 8px;
             border: none;
             text-align: center;
             display: flex;
@@ -418,55 +438,58 @@
             text-decoration: none;
             margin-top: 30px;
             margin-left: 10px;
-            
-    
-    
-            &:hover{
-                background-color:#D12121 ;
+
+
+
+            &:hover {
+                background-color: #D12121;
                 transition: ease-in .4s;
             }
         }
-        
-    }
-   
-      
 
-    .delivery{
+    }
+
+
+
+    .delivery {
         width: 100%;
         height: 106vh;
         background-image: url('https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/h5_bg.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    
-    
-        .text{
+
+
+        .text {
             margin-top: 150px;
             margin-left: 80px;
             color: #fff;
             font-family: oswald-bold;
-            h4{
-               font-size: 28px; 
-               margin-bottom: 40px;
+
+            h4 {
+                font-size: 28px;
+                margin-bottom: 40px;
             }
-            h1{
+
+            h1 {
                 font-size: 60px;
                 margin-bottom: 40px;
-    
-    
+
+
             }
-            
-            span{
-                color:#FFC222;
+
+            span {
+                color: #FFC222;
             }
-            .home-btn{
+
+            .home-btn {
                 background-color: #00A149;
                 font-size: 22px;
                 font-family: oswald-semibold;
                 color: #fff;
                 width: 190px;
                 height: 60px;
-                border-radius: 8px ;
+                border-radius: 8px;
                 border: none;
                 text-align: center;
                 display: flex;
@@ -475,164 +498,175 @@
                 text-decoration: none;
                 margin-top: 70px;
                 margin-left: 10px;
-        
-        
-                &:hover{
-                    background-color:#D12121 ;
+
+
+                &:hover {
+                    background-color: #D12121;
                     transition: ease-in .4s;
                 }
             }
-            
-           
+
+
         }
-        .deliveryman{
-            animation: scale-up 7s linear  infinite;
+
+        .deliveryman {
+            animation: scale-up 7s linear infinite;
             margin-left: 70px;
-    
+
         }
     }
 }
-.dark{
-    .formode{
+
+.dark {
+    .formode {
         background-color: #242424;
 
-    .fastfoods{
-        // background-color: #535353;
-        margin: 0;
-        padding: 0;
-        p {
-            font-size: 20px;
-            font-family: oswald-bold;
-            color: #fff;
-            margin:0 !important;
-    
-        }
-    
-        h1 {
-            font-size: 60px;
-            font-family: oswald-bold;
-            color: #ffffff;
-            margin: 20px 0px 50px 0px;
-    
-        }
-        .container{
-            margin-top: 0;
-            margin-bottom: 0;
-            .row{
-         
-                p{
-                    color: black !important;
+        .fastfoods {
+            // background-color: #535353;
+            margin: 0;
+            padding: 0;
+
+            p {
+                font-size: 20px;
+                font-family: oswald-bold;
+                color: #fff;
+                margin: 0 !important;
+
+            }
+
+            h1 {
+                font-size: 60px;
+                font-family: oswald-bold;
+                color: #ffffff;
+                margin: 20px 0px 50px 0px;
+
+            }
+
+            .container {
+                margin-top: 0;
+                margin-bottom: 0;
+
+                .row {
+
+                    p {
+                        color: black !important;
+                    }
+
+
                 }
-        
-             
+
+                .card:hover p {
+                    cursor: pointer;
+                    color: #F4F1EA !important;
+                }
+
+                .home-btn {
+                    background-color: #00A149;
+                    font-size: 22px;
+                    font-family: oswald-semibold;
+                    color: #fff;
+                    width: 190px;
+                    height: 60px;
+                    border-radius: 8px;
+                    border: none;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    margin-top: 30px;
+                    margin-left: 10px;
+
+
+
+                    &:hover {
+                        background-color: #D12121;
+                        transition: ease-in .4s;
+                    }
+                }
             }
-        
-            .card:hover p{
-                cursor: pointer;
-                color: #F4F1EA !important;
+        }
+
+
+    }
+
+    .delivery {
+        width: 100%;
+        height: 106vh;
+        background-image: url('https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/h5_bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        .text {
+            margin-top: 150px;
+            margin-left: 80px;
+            color: #fff;
+            font-family: oswald-bold;
+
+            h4 {
+                font-size: 28px;
+                margin-bottom: 40px;
             }
-        
-            .home-btn{
+
+            h1 {
+                font-size: 60px;
+                margin-bottom: 40px;
+
+
+            }
+
+            span {
+                color: #FFC222;
+            }
+
+            .home-btn {
                 background-color: #00A149;
                 font-size: 22px;
                 font-family: oswald-semibold;
                 color: #fff;
                 width: 190px;
                 height: 60px;
-                border-radius: 8px ;
+                border-radius: 8px;
                 border: none;
                 text-align: center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-decoration: none;
-                margin-top: 30px;
+                margin-top: 70px;
                 margin-left: 10px;
-                
-        
-        
-                &:hover{
-                    background-color:#D12121 ;
+
+
+                &:hover {
+                    background-color: #D12121;
                     transition: ease-in .4s;
                 }
             }
-        }
-        }
-    
-  
-}
-
-.delivery{
-    width: 100%;
-    height: 106vh;
-    background-image: url('https://demo2.wpopal.com/fazfood/wp-content/uploads/2023/10/h5_bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
-    .text{
-        margin-top: 150px;
-        margin-left: 80px;
-        color: #fff;
-        font-family: oswald-bold;
-        h4{
-           font-size: 28px; 
-           margin-bottom: 40px;
-        }
-        h1{
-            font-size: 60px;
-            margin-bottom: 40px;
 
 
         }
-        
-        span{
-            color:#FFC222;
-        }
-        .home-btn{
-            background-color: #00A149;
-            font-size: 22px;
-            font-family: oswald-semibold;
-            color: #fff;
-            width: 190px;
-            height: 60px;
-            border-radius: 8px ;
-            border: none;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            margin-top: 70px;
-            margin-left: 10px;
-    
-    
-            &:hover{
-                background-color:#D12121 ;
-                transition: ease-in .4s;
-            }
-        }
-        
-       
-    }
-    .deliveryman{
-        animation: scale-up 7s linear  infinite;
-        margin-left: 70px;
 
+        .deliveryman {
+            animation: scale-up 7s linear infinite;
+            margin-left: 70px;
+
+        }
     }
 }
-}
+
 @keyframes scale-up {
     0% {
         transform: scale(0.9);
     }
 
-    
+
 
     50% {
         transform: scale(1.0);
     }
+
     100% {
         transform: scale(0.9);
     }
@@ -651,142 +685,240 @@
         transform: scale(0.5);
     }
 }
-@keyframes rotate{
-    0%{
+
+@keyframes rotate {
+    0% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(15deg);
     }
-    100%{
+
+    100% {
         transform: rotate(0deg);
     }
 
- 
+
 }
-@keyframes rotate-two{
-    0%{
+
+@keyframes rotate-two {
+    0% {
         transform: rotate(0deg);
     }
-  
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 
- 
+
 }
-.slick-track{
+
+.slick-track {
     display: flex;
     align-items: center;
- 
+
 }
 
-@media (max-width: 767px) {
-    .slider-three{
-        display: block !important;
-    }
-    .slider-one{
-        display: none !important;
-    }
-    .carousel-container {
-      width: 100%;
-      padding: 20px 0;
-    }
-  
-    .carousel-card {
-      width: 100% !important;
-      height: auto !important;
-    }
-  
-    .hero img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .left, .right {
-      width: 100%;
-      height: auto;
-      padding: 20px;
-    }
-  
-    .pizza, .main-food {
-      width: 100%;
-      height: auto;
-      position: static;
-      margin: 0 auto;
-    }
-  
-    .swiper {
-      margin: 0;
-      padding: 0;
-    }
-  
-    .dark-section {
-      height: auto;
-      padding: 20px;
-    }
-  
-    .delivery {
-      height: auto;
-    }
-    
-    .home-btn {
-      width: 100%;
-      font-size: 18px;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .carousel-container {
-      width: 90%;
-      padding: 30px 0;
-    }
-  
-    .carousel-card {
-      width: 45% !important;
-      height: auto !important;
-    }
-  
-    .left, .right {
-      width: 50%;
-      height: auto;
-      padding: 30px;
+@media (max-width: 768px) {
+    .main-pic{
+        animation: fadeIn 3s ease-in-out; 
+
     }
 
-    .slider-two{
-        display: block !important;
-    }
-    .slider-one{
+    .grill{
         display: none !important;
     }
-  
-    .pizza, .main-food {
-      width: 90%;
-      height: auto;
-      margin: 0 auto;
+    .spicy{
+      display: none !important;
+    }
+    .pizza-text2{
+        display: none !important;
+    }
+    .tomato{
+        display: none !important;
+    }
+ 
+   .fifty{
+    position: absolute;
+    bottom: 35%;
+    animation: fadeIn 5s ease-in-out; 
+
+   }
+    .chilli-shape-1,.chilli-shape-2,.chilli-shape-3{
+        display: none;
+    }
+    .settings {
+        display: none;
+    }
+
+    .settings2 {
+        display: block !important;
+
+    }
+    .carousel-card{
+        margin: 0 !important;
+        width: 320px;
+    }
+
+    .slider-three {
+        display: block !important;
+    }
+
+    .slider-one {
+        display: none !important;
+    }
+
+    .carousel-container {
+        width: 100%;
     }
   
-    // .swiper {
-    //   margin: 0;
-    //   padding: 0;
-    // }
-  
+    .carousel-card {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 550px;
+    }
+    .slide{
+        height: 80vh;
+    }
+    .two-sides {
+        display: flex;
+        flex-direction: column;
+
+        .left,
+        .right {
+            width: 100%;
+            height: auto;
+            margin: 0;
+
+            .fiftyper{
+                display: none !important;
+            }
+            .burger{
+                display: none !important;
+            }
+        }
+        .left{
+            margin-bottom: 30px;
+        }
+        .main-food{
+            width: 220px;
+        }
+    }
+
+    .swiper {
+        margin: 0;
+        padding: 0;
+
+        .slick-next{
+            display: none !important;
+        }
+    }
+
     .dark-section {
-      height: auto;
-      padding: 40px;
+        height: auto;
+        padding: 20px;
     }
-  
+
     .delivery {
-      height: auto;
+        height: auto;
+        .delivery-text{
+            margin-left: 0 !important;
+
+            .text{
+                margin-left: 10px !important;
+            }
+        }
     }
-    
+
     .home-btn {
-      width: 50%;
-      font-size: 20px;
+        width: 100%;
+        font-size: 18px;
     }
-  }
-  @media (min-width: 767px) {
-    .card{
+
+    .tomato {
+        transform: none !important;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1224px) {
+    .carousel-container {
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .settings {
+        display: none;
+    }
+
+    .settings1 {
+        display: block !important;
+    }
+
+    .carousel-card {
+        width: 45% !important;
+        height: auto !important;
+    }
+
+    .two-sides {
+        display: flex;
+        flex-direction: column;
+
+        .left,
+        .right {
+            width: 100%;
+            height: auto;
+            margin: 0;
+        }
+        .left{
+            margin-bottom: 30px;
+        }
+        .main-food{
+            width: 290px;
+        }
+    }
+
+    .tomato {
+        transform: none !important;
+    }
+
+    .slider-two {
+        display: block !important;
+    }
+
+    .slider-one {
+        display: none !important;
+    }
+
+    .dark-section {
+        height: auto;
+        padding: 40px;
+    }
+
+    .delivery {
+        height: auto;
+    }
+
+    .home-btn {
+        width: 50%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .card {
         width: 324px !important;
     }
-  }
+    
+}
+
+@media (max-width: 1000px) {
+    .deliveryman {
+        display: none;
+    }
+}

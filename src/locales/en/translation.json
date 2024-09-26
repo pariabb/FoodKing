@@ -6,7 +6,7 @@
         "menu4":"Blog",
         "menu5":"FAQ's",
         "menu6":"Contact Us",
-        "salam":"Hi,Pari",
+        "salam":"Hi",
         "dashboard":"Dashboard",
         "logout":"Log out",
         "login":"Login",
@@ -14,10 +14,79 @@
         "text2":"Track Your Order",
         "text3":"This involves interactions between a business and its customers. It is about meeting customers needs and resolving their problems. Effective customer service is crucial."
 
+    },
+
+    "home":{
+        "coursel":{
+            "text1":"Cripsy,Very Bite Taste",
+            "text2":"Popular Food Items",
+            "text3":"DELICIOUS",
+            "text4":" FRIED" ,
+            "text5":"CHICKEN",
+            "text6":"AWESAME",
+            "text7":"FAVORITE",
+            "text8":"Order now",
+            "text9":"SUPER ",
+            "text10":"GLOBAL ",
+            "text11":"HAPPY SPONSORS WITH US",
+            "text12": "SAVE 20%",
+            "text13": "Today's",
+            "text14": "Astackin ",
+            "text15": "Day",
+            "text16": "Grilled ",
+            "text17": "Chicken $59.00",
+            "text18": "POPULAR FASTFOODS",
+            "text19": "View More",
+            "text20": "This is chance",
+            "text21": "30 MINUTES",
+            "text22": "DELIVERY!",
+            "text23": "If you’re having a meeting, working late at night andneed an extra push. Let us know and we will be there"
+
+        }
+    },
+    "footer":{
+
+        "text1":"We believe it has the power to do amazing things.",
+        "text2":"Interested in working with us?",
+        "text3":"Quick Links",
+        "text4":" Services" ,
+        "text5":"About Company",
+        "text6":"Latest News",
+        "text7":"Blogs",
+        "text8":"My Account",
+        "text9":"My Order List",
+        "text10":"My Wishlist ",
+        "text11":"Order Tracking",
+        "text12": "Shoping Cart",
+        "text13": "Address:",
+        "text14": "Hours:",
+        "text15": "Monday To Friday",
+        "text16": "Install App",
+        "text17": "From App Store Or Google Play",
+        "text18": "24/7 SUPPORT CENTER",
+        "text19": " All Rights Reserved.."
 
 
-
-
-
-    }
+        
+    },
+    "about":{
+        "text1":"Welcome to FoodKing",
+        "text2":"We are committed to providing the best food experience, with quality ingredients and customer satisfaction at the heart of everything we do.",
+        "text3":"With a variety of dishes, we ensure that every meal is a delightful experience. Our chefs are experts in crafting food that not only tastes great but is also healthy and fresh.",
+        "text4":"View Our Menu",
+        "text5":"Why Choose Us?",
+        "text6":"Quality Food",
+        "text7":"Our ingredients are sourced from the best suppliers to ensure the highest quality food.",
+        "text8":"Customer Satisfaction",
+        "text9":"We focus on customer service, making sure each customer leaves satisfied with their meal.",
+        "text10":"Fast Delivery",
+        "text11":"Get your food delivered hot and fresh, right to your doorstep in no time.",
+        "text12":"Meet Our Team",
+        "text13":"Head Chef",
+        "text14":"John leads our culinary team with a passion for creating amazing dishes and flavors.",
+        "text15":"Restaurant Manager",
+        "text16":"Jane ensures everything runs smoothly in the restaurant and takes care of our guests.",
+        "text17":"Pastry Chef",
+        "text18":"Emma is known for her delightful pastries and desserts that everyone loves."  
+      }
 }
