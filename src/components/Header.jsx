@@ -2,7 +2,7 @@ import React, { useEffect, useTransition } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { RiMenu4Line } from 'react-icons/ri';
 import { useCart } from 'react-use-cart';
-import i18next from 'i18next';
+import i18next from '../i18n/i18next';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import { ModeContext } from '../context/ModeContext';
