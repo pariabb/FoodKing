@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['i18next', 'slugify'], 
-    },
-  },
+      external: ['i18next', 'slugify']
+    }
+  }
+  
 })
