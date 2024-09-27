@@ -43,7 +43,7 @@ const About = () => {
                             {t("about.text2")}                            </p>
                             <p>
                             {t("about.text3")}                            </p>
-                            <Link to='/shop' className='home-btn'>
+                            <Link to='/shop' className='home-btn '>
                             {t("about.text4")}                            </Link>
                         </div>
                     </div>
