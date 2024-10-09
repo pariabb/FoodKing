@@ -12,6 +12,7 @@ import { WishlistProvider } from 'react-use-wishlist'
 import { CartProvider } from 'react-use-cart'
 import { ModeProvider } from './context/ModeContext'
 import './i18n/i18next'
+import i18next from 'i18next';
 
 
 

@@ -6,11 +6,11 @@ import az from '../locales/az/translation.json';
 const savedLang = localStorage.getItem('i18nextLng') || 'en';
 
 i18n
-  .use(initReactI18next)
+  .use(initReactI18next) 
   .init({
     resources: {
       en: {
-        translation: en,
+        translation: en, 
       },
       az: {
         translation: az,
@@ -23,4 +23,4 @@ i18n
     },
   });
 
-export default i18n;
+export default i18n; 
