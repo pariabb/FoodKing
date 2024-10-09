@@ -1,11 +1,11 @@
-import i18n from 'i18next'; 
+import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import en from '../locales/en/translation.json';
 import az from '../locales/az/translation.json';
 
 const savedLang = localStorage.getItem('i18nextLng') || 'en';
 
-i18n
+i18next
   .use(initReactI18next) 
   .init({
     resources: {
@@ -23,4 +23,4 @@ i18n
     },
   });
 
-export default i18n; 
+export default i18next; 
